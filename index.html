@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#"> covid <span><svg class="svg-inline--fa fa-virus fa-w-16" aria-hidden="true"
+                    focusable="false" data-prefix="fas" data-icon="virus" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512" data-fa-i2svg="">
+                    <path fill="currentColor"
+                        d="M483.55,227.55H462c-50.68,0-76.07-61.27-40.23-97.11L437,115.19A28.44,28.44,0,0,0,396.8,75L381.56,90.22c-35.84,35.83-97.11,10.45-97.11-40.23V28.44a28.45,28.45,0,0,0-56.9,0V50c0,50.68-61.27,76.06-97.11,40.23L115.2,75A28.44,28.44,0,0,0,75,115.19l15.25,15.25c35.84,35.84,10.45,97.11-40.23,97.11H28.45a28.45,28.45,0,1,0,0,56.89H50c50.68,0,76.07,61.28,40.23,97.12L75,396.8A28.45,28.45,0,0,0,115.2,437l15.24-15.25c35.84-35.84,97.11-10.45,97.11,40.23v21.54a28.45,28.45,0,0,0,56.9,0V462c0-50.68,61.27-76.07,97.11-40.23L396.8,437A28.45,28.45,0,0,0,437,396.8l-15.25-15.24c-35.84-35.84-10.45-97.12,40.23-97.12h21.54a28.45,28.45,0,1,0,0-56.89ZM224,272a48,48,0,1,1,48-48A48,48,0,0,1,224,272Zm80,56a24,24,0,1,1,24-24A24,24,0,0,1,304,328Z">
+                    </path>
+                </svg><!-- <i class="fas fa-virus"></i> Font Awesome fontawesome.com --> 19
+            </span>
+
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <div class="navbar-collapse collapse show" id="navbarSupportedContent" style="">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about " data-scroll="">about corona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#symptoms" data-scroll="">symtoms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prevention" data-scroll="">prevention</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#treatment" data-scroll="">treatment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll="">faQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#new" data-scroll="">news</a>
+                    </li>
+                    <a class="nav-link" href="#protect" data-scroll=""><button class="btn btn-primary"
+                            style="border-radius: 20px; font-size: 20px; padding: 5px; margin-left: 10px;"> do &amp;
+                            don`t</button></a>
+
+                </ul>
+
+            </div>
+            <button id="dark" class="btn btn-dark" style="margin-left: 20px;">dark</button>
+        </div>
+    </nav>
+
+    <!-- first section -->
+    <div class="container text-center" style="margin-top: 10%;" id="health">
+        <div class="row my-5 ">
+            <div class="col-md-6">
+                <h1 class="fs-1 fw-bold">corona <span class="text-primary">(covid-19)</span> virus</h1>
+                <p class="fs-4 fw-bold text-warning">the corona virus (covid-19) was first reported in wuhan,hubei,
+                    china in
+                    december 2019 ,
+                    the
+                    outbreak
+                    was later recognized as a pandemic by the world health organization (who) on 11 march 2020 .</p>
+                <div class="row my-5">
+                    <div class="col-md-4">
+                        <h5 class="text-primary">DEATHS</h5>
+                        <h2>467,432</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-primary">RECOVERED</h5>
+                        <h2>4,556,091</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-primary">WORLDWIDECASES</h5>
+                        <h2>8,949,671</h2>
+                    </div>
+                </div>
+                <p class="text-primary"> * Last updated : Jun 21, 2020, 09:24 AM America/Chicago</p>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid my-5" src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\header-a.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <!-- second section -->
+
+    <div class="col-md-6">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+
+                    <h3 class="text-warning">ABOUT THE DISEASE</h3>
+                </div>
+                <h1>CORONAVIRUS (COVID-19)</h1>
+            </div>
+            <p class="text-info fs-4 fw-bold">COVID-19 is a new illness that can affect your lungs and airways.</p>
+        </div>
+        <p class="text-info fs-4 fw-bold">It's caused by a virus called coronavirus. It was discovered in December 2019
+            in Wuhan,
+            Hubei,
+            China.
+        </p>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <p class="text-info fs-4 fw-bold">Common signs of infection include respiratory symptoms, fever, cough,
+                    shortness of breath
+                    and
+                    breathing difficulties. In more severe cases, infection can cause pneumonia, severe acute
+                    respiratory syndrome, kidney failure and even death.</p>
+            </div>
+            <p class="text-info fs-4 fw-bold">Standard recommendations to prevent infection spread include regular hand
+                washing, covering
+                mouth
+                and
+                nose when coughing and sneezing, thoroughly cooking meat and eggs. Avoid close contact with
+                anyone
+                showing symptoms of respiratoryillness such as coughing and sneezing</p>
+        </div>
+    </div>
+
+    </div>
+    <!-- third section -->
+    <div class="container text-center " style="margin-top: 10%;" id="trans">
+        <h3 style="color: darkblue;">HOW CORONAVIRUS IS SPREAD</h3>
+        <h1>TRANSMISSION OF (COVID-19)</h1>
+        <p>Because it's a new illness, we do not know exactly how coronavirus spreads from person to person. Similar
+            viruses
+            are spread in cough droplets. </p>
+        <div class="row my-5">
+            <div class="col-md-4">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\spread-a.png" class="img-fluid" alt="">
+                <h6 class=" fs-6 fw-bold text-success">Person-to-person spread as close contact with infected
+                </h6>
+                <p class="fs-5 fw-bold">The coronavirus is thought to spread mainly from person to person.
+                    This can happen between people
+                    who
+                    are in close contact with one another.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\spread-b.png" class="img-fluid" alt="">
+                <h6 class=" fs-6 fw-bold text-success">Touching or contact with infected surfaces or objects
+                </h6>
+                <p class=" fs-5 fw-bold">A person can get COVID-19 by touching a surface or object that has the
+                    virus on it and then
+                    touching
+                    their own mouth, nose, or possibly their eyes.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\spread-c.png" class="img-fluid" alt="">
+                <h6 class=" fs-6 fw-bold text-success">Droplets that from infected person coughs or sneezes
+                </h6>
+                <p class=" fs-5 fw-bold">The coronavirus is thought to spread mainly from person to person.
+                    This can happen between people
+                    who
+                    are in close contact with one another.</p>
+            </div>
+        </div>
+    </div>
+    <!-- fouth section -->
+    <div class="oc bg-info" id="symptoms" tabindex="-1" style="outline: none;">
+        <div class="container text-center my-5 " id="symp">
+            <h4>WHAT ARE THE SYMPTOMS OF COVID-19 ?</h4>
+            <h1 class="fs-1 fw-bold text-primary">SYMPTOMS OF CORONAVIRUS</h1>
+            <p class=" fs-5 fw-bold text-success">The most common symptoms of COVID-19 are fever, tiredness, and dry
+                cough. Some patients may have
+                aches
+                and
+                pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and
+                begin
+                gradually. Also the symptoms may appear 2-14 days after exposure.</p>
+            <div id="or" class="row">
+                <div class="col-md-4">
+                    <h4 class="he6">Fever</h4>
+                    <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\symptom-a.png" class="img-fluid" alt="">
+                    <p class=" fs-5 fw-bold"> <span class=" fs-5 fw-bold text-warning">High Fever</span> : this means
+                        you feel hot to touch on your chest or back (you do not
+                        need to measure
+                        your temperature). It is a common sign and also may appear in 2-10 days if you affected</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="he6">Cough</h4>
+                    <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\symptom-b.png" class="img-fluid" alt="">
+                    <p class=" fs-5 fw-bold"> <span class=" fs-5 fw-bold text-warning"> Continuous cough</span> : this
+                        means coughing a lot for more than an hour, or 3 or
+                        more
+                        coughing
+                        episodes in 24 hours (if you usually have a cough, it may be worse than usual).</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="he6">Shortness of breath</h4>
+                    <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\symptom-c.png" class="img-fluid" alt="">
+                    <p class=" fs-5 fw-bold"> <span class=" fs-5 fw-bold text-warning"> Difficulty breathing</span> :
+                        Around 1 out of every 6 people who gets COVID-19
+                        becomes
+                        seriously ill and
+                        develops difficulty breathing or shortness of breath.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- fiveth section -->
+    <div id="prevention" class="container to text-center " style="margin-top: 10%;">
+        <h3 style="color: darkblue;">HOW TO PROTECT YOURSELF</h3>
+        <h1>PREVENTION &amp; ADVICE</h1>
+        <p class=" fs-5 fw-bold text-danger">There is currently no vaccine to prevent coronavirus disease 2019
+            (COVID-19). The best way to prevent
+            illness
+            is to avoid being exposed to this virus. Stay aware of the latest information on the COVID-19
+            outbreak,
+            available on the WHO website and through your national and local public health authority. </p>
+        <div class="row " style="margin-top: 10%;">
+            <div class="col-md-3">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\advice-a.png" class="img-fluid" alt="">
+                <h4>Wash your hands frequently</h4>
+                <p class="fs-6 fw-bold text-primary">Regularly and thoroughly clean your hands with an alcohol-based
+                    hand rub or wash them with
+                    soap
+                    and
+                    water for at least 20 seconds.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\advice-b.png" class="img-fluid" alt="">
+                <h4>Maintain social distancing</h4>
+                <p class="fs-6 fw-bold text-primary">Maintain at least 1 metre (3 feet) distance between yourself &amp;
+                    anyone who is coughing or
+                    sneezing. If
+                    you are too close, get chance to infected.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\advice-c.png" class="img-fluid" alt="">
+                <h4>Avoid touching face</h4>
+                <p class="fs-6 fw-bold text-primary">Hands touch many surfaces and can pick up viruses. So, hands can
+                    transfer the virus to your
+                    eyes,
+                    nose or mouth and can make you sick.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\advice-d.png" class="img-fluid" alt="">
+                <h4>Practice respiratory hygiene</h4>
+                <p class="fs-6 fw-bold text-primary">Maintain good respiratory hygiene as covering your mouth &amp; nose
+                    with your bent elbow or
+                    tissue
+                    when
+                    cough or sneeze.</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- sixth section -->
+    <div class="row">
+        <div class="col-md-7">
+            <h1>Take steps to protect others</h1>
+            <h4 class="fs-4 fw-bold text-danger"> <span>1 :</span> Stay home if you’re sick <p>Stay home if you are
+                    sick, except to get medical
+                    care.
+                </p>
+            </h4>
+            <h4 class="fs-4 fw-bold text-danger"><span>2 :</span> Cover your mouth and nose <p>– You should wear a
+                    facemask when you are around
+                    other
+                    people (e.g.,
+                    sharing a room or vehicle) and before you enter a healthcare provider’s.</p>
+            </h4>
+            <h4 class="fs-4 fw-bold text-danger"> <span>3 :</span> Wear a facemask if you are sick <p>– You should wear
+                    a facemask when you are
+                    around other people
+                    (e.g., sharing a room or vehicle) and before you enter a healthcare provider’s</p>
+            </h4>
+            <h4><span class="fs-4 fw-bold text-danger"> 4 :</span> Clean AND disinfect frequently touched surfaces daily
+                <p class="fs-4 fw-bold text-danger">– This includes
+                    phones,
+                    tables, light
+                    switches, doorknobs, countertops, handles, desks, toilets, faucets, and sinks.</p>
+            </h4>
+            <h4 class="fs-4 fw-bold text-danger"><span> 5 : </span> Clean the dirty surfaces <p> – Use detergent or soap
+                    and water prior to
+                    disinfection.</p>
+            </h4>
+            <h4 class="fs-4 fw-bold text-danger"> <span> 6 : </span> Stay informed about the local COVID-19 situation
+                <p> – Get up-to-date
+                    information about local
+                    COVID-19 activity from <a href="">public health officials</a></p>
+            </h4>
+            <h4 class="fs-4 fw-bold text-danger"> <span> 7 : </span> Dedicated, lined trash can <p> – If possible,
+                    dedicate a lined trash can for
+                    the
+                    ill person. Use
+                    gloves when removing garbage bags, and handling &amp; disposing of trash.</p>
+            </h4>
+        </div>
+        <div class="col-md-5">
+            <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\steps.png" class="img-fluid" alt="">
+        </div>
+    </div>
+    <!-- seveth section -->
+    <div class="container sc text-center">
+        <h1>Follow steps to wash hands</h1>
+        <h2 class="fs-2 fw-bold text-success">why do i need my hand ?</h2>
+        <div class="row my-5">
+            <div class="col-md-2">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\hand-a.png" class="img-fluid" alt="">
+                <h5 class="fs-5 fw-bold text-info">Soap on Hand</h5>
+            </div>
+            <div class="col-md-2">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\hand-b.png" class="img-fluid" alt="">
+                <h5 class="fs-5 fw-bold text-info">Palm to Palm</h5>
+            </div>
+            <div class="col-md-2">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\hand-c.png" class="img-fluid" alt="">
+                <h5 class="fs-5 fw-bold text-info">Between Fingers</h5>
+            </div>
+            <div class="col-md-2">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\hand-d.png" class="img-fluid" alt="">
+                <h5 class="fs-5 fw-bold text-info">Back to Hands</h5>
+            </div>
+            <div class="col-md-2">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\hand-e.png" class="img-fluid" alt="">
+                <h5 class="fs-5 fw-bold text-info">Clean with Water</h5>
+            </div>
+            <div class="col-md-2">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\hand-f.png" class="img-fluid" alt="">
+                <h5 class="fs-5 fw-bold text-info">Focus on Wrist</h5>
+            </div>
+        </div>
+    </div>
+    <!-- section 8 -->
+    <div class="c1" id="protect">
+        <div class="container text-center" id="protectt">
+            <h4>DO’S &amp; DON’TS</h4>
+            <h1>PROTECT YOURSELF</h1>
+            <p>The best thing you can do now is plan for how you can adapt your daily routine. Take few steps to
+                protect
+                yourself as Clean your hands often, Avoid close contact, Cover coughs and sneezes, clean daily used
+                surfaces etc. The best way to prevent illness is to avoid being exposed to this virus.</p>
+            <div class="row cr">
+                <div class="col-md-4">
+                    <h3 class="fs-3 fw-bold text-warning">Avoid Close Contact <img
+                            src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\donts-a.png" alt=""></h3>
+
+                    <h3 class="fs-3 fw-bold text-warning">Don’t Touch Face <img
+                            src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\donts-b.png" alt=""></h3>
+
+                    <h3 class="fs-3 fw-bold text-warning">Social Distancing <img
+                            src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\donts-c.png" alt=""></h3>
+
+                </div>
+                <div class="col-md-4">
+                    <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\protect.png" class="img-fluid oi"
+                        alt="">
+                </div>
+                <div class="col-md-4">
+                    <h3 class="fs-3 fw-bold text-warning">Wash Your Hands <img
+                            src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\dos-a.png" alt="">
+                    </h3>
+
+                    <h3 class="fs-3 fw-bold text-warning">Drink Much Watar <img
+                            src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\dos-b.png" alt="">
+                    </h3>
+
+                    <h3 class="fs-3 fw-bold text-warning">Use Face Mask<img
+                            src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\dos-c.png" alt=""></h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section 9 -->
+    <div class="container text-center">
+        <h4 class="fs-3 fw-bold ">RECENT FROM BLOG</h4>
+        <h1 class="fs-1 fw-bold text-primary">last UPDATE</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\blog-a.jpg" class="img-fluid" alt="">
+                <h4 class="fs-4 fw-bold text-success">Caring for someone at home</h4>
+                <p class="fs-4 fw-bold text-info">Most people who get sick with COVID-19 will have only mild illness and
+                    should recover at
+                    home.
+                    Care at home can help stop the spread of COVID-19.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\blog-b.jpg" class="img-fluid" alt="">
+                <h4 class="fs-4 fw-bold text-success">15 ways to keep safe and healthy</h4>
+                <p class="fs-4 fw-bold text-info">Most people who get sick with COVID-19 will have only mild illness and
+                    should recover at
+                    home.
+                    Care at home can help stop the spread of COVID-19.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="C:\Users\adham\OneDrive\سطح المكتب\corona-project\blog-c.jpg" class="img-fluid" alt="">
+                <h4 class="fs-4 fw-bold text-success">If You Think You Are Sick</h4>
+                <p class="fs-4 fw-bold text-info">If you are sick with COVID-19 or think you might have it, follow the
+                    steps below to help
+                    protect
+                    other people in your home and community.</p>
+            </div>
+        </div>
+    </div>
+    <!-- section 10 -->
+    <div class="lastd  bg-info">
+        <div class="container  ">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1>covid-19</h1>
+                    <p>
+                        website is
+                        for
+                        health information and advice about coronavirus (COVID-19), how to prevent
+                        and protect yourself from disease.</p>
+                    <p>
+                        about the
+                        government response to coronavirus on GOV.UK.</p>
+
+                    <div class="col-md-3">
+                        <h2>QUICK LINK</h2>
+                        <ol type="I">
+                            <li><a href="#abt">about corona</a></li>
+                            <li><a href="#symp">symptoms</a></li>
+                            <li><a href="#pre">prevention</a></li>
+                            <li><a href="#protectt">protect your self</a></li>
+                        </ol>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>HELPFULL LINK</h2>
+                        <ol type="A" class="ono">
+                            <li><a href="#health">who website</a></li>
+                            <li><a href="#health">cdc website</a></li>
+                            <li><a href="#health">nhs website</a></li>
+                            <li><a href="#health">harverd health</a></li>
+                        </ol>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>important LINK</h2>
+                        <ol type="i" class="ont">
+                            <li><a href="#health">healthcare professional</a></li>
+                            <li><a href="#health">healthcare facilities</a></li>
+                            <li><a href="#health">older adults &amp; medical condition</a></li>
+                            <li><a href="#health">repare your family</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+                </svg> <i style=" margin-right: 20px; font-size: 20px; " class=" fas fa-check-circle"></i>
+                COVID-19.
+                Template Made by eng : <span style="color: yellowgreen; text-transform: capitalize;">kareem ibrahim
+                    elsayed</span> .</p>
+                <p style="color: violet; padding: 10px;">
+                    Disclaimer: We hope you find the information presented on this website useful. This website is for
+                    general information and raise awareness of (2019-nCoV) only. All the information based on WHO, NHS
+                    and
+                    CDC website. Information on our website is meant for awareness, if you have any doubt please verify
+                    from
+                    respective site .</p>
+            </div>
+
+
+        </div>
+        <button id="btn1" class="btn1"><i class="fa-solid fa-arrow-right fa-rotate-270"></i></button>
+        <script src="main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script>
+            let btn1 = document.getElementById('btn1');
+            btn1.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })
+            })
+        </script>
+        <script>
+            document.getElementById('dark').addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+            });
+        </script>
+</body>
+
+</html>
